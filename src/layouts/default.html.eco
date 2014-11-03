@@ -46,7 +46,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">Project name</a>
+				<a class="navbar-brand" href="/">Vincent Ramdhanie</a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -67,22 +67,67 @@
 	</div>
 
 	<!-- Content -->
-	<div class="container">
+	
 		<!-- Content -->
-		<section id="content" class="content">
+		
 			<%- @content %>
-		</section>
+		
 
 		<!-- Footer -->
 		<footer>
-			<p class="pull-left">&copy; Company <%- (new Date()).getFullYear() %></p>
-			<p class="pull-right">
-				This website was last updated at <%= @site.date.toISOString() %>
-			</p>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Vincent Ramdhanie</strong>
+                    </h4>
+                    <p>Kelly Village<br>Caroni, Trinidad</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 1 (868) 741-0402</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:vramdhanie@gmail.com">vramdhanie@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="http://www.facebook.com/vramdhanie"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com/vramdhanie"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com/+VincentRamdhanie1"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/pub/vincent-ramdhanie/25/39a/4b9"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Vincent Ramdhanie <%- (new Date()).getFullYear() %></p>
+                        <p class="text-muted">
+				            This website was last updated at <%= @moment(@site.date).format('D MMMM YYYY HH:mm') %>
+			             </p>
+                </div>
+            </div>
+        </div>
+			
+			
 		</footer>
-	</div><!-- /container -->
+	
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+        
+        <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-8139821-2']);
+ _gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_trackPageview']);
+					
+ (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
 </body>
 </html>

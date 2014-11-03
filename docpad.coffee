@@ -1,6 +1,10 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
+
+
 docpadConfig = {
+
+    watchOptions: preferredMethods: ['watchFile','watch']
 
 	# =================================
 	# Template Data
@@ -12,46 +16,54 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://www.vincentramdhanie.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Vincent Ramdhanie"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Software Development with Spring Framework, the MEAN stack, PHP and Docpad
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				Java, PHP, HTML, CSS, docpad, Spring, Algorithms, Software
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Vincent Ramdhanie"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "vramdhanie@gmail.com"
 
 			# Styles
 			styles: [
 				"/styles/twitter-bootstrap.css"
+                "/vendor/stylish-portfolio/css/stylish-portfolio.css"
+                "/vendor/stylish-portfolio/font-awesome-4.1.0/css/font-awesome.min.css"
+                "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
 				"/styles/style.css"
+                "/styles/custom.css"
 			]
 
 			# Scripts
 			scripts: [
 				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
+                "//apis.google.com/js/plusone.js"
+                "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
+                "/scripts/custom.js"
 				"/scripts/script.js"
 			]
+
+
 
 
 
@@ -78,6 +90,7 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+
 
 
 	# =================================

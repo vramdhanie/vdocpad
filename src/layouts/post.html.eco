@@ -2,22 +2,35 @@
 layout: default
 ---
 
+<div class="container">
+
+<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-md toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-dark btn-md pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="/pages/courses">Courses</a>
+            </li>
+            <% for document in @getCollection('posts').toJSON(): %>
+            <li>
+                <a href="<%= document.url %>"><i class="fa <%= document.icon%>"></i> <%= document.title %></a>
+            </li>
+            <% end %>
+            
+        </ul>
+    </nav>
+
 <article id="post" class="post">
 	<h1><%= @document.title %></h1>
 	<div class="post-content"><%- @content %></div>
 </article>
 
-<footer>
-	<% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
-	<section id="related">
-		<h3>Related Posts</h3>
-		<nav class="linklist">
-			<% for document in @document.relatedDocuments: %>
-				<li><span><%= document.date.toDateString() %></span>
-				&raquo;
-				<a href="<%= document.url %>"><%= document.title %></a></li>
-			<% end %>
-		</nav>
-	</section>
-	<% end %>
-</footer>
+</div>
+
+
+	
+	
+
+
+
