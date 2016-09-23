@@ -1,51 +1,44 @@
 {
-  "name": "twitter-bootstrap.docpad",
-  "version": "0.10.0",
-  "description": "Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
-  "homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
+  "name": "vdocpad",
+  "version": "0.0.1",
+  "description": "Docpad version of my website",
+  "homepage": "https://vincentramdhanie.me",
   "keywords": [
-    "docpad-skeleton",
+    "vincent ramdhanie",
     "docpad",
-    "website",
-    "bootstrap",
-    "twitter bootstrap"
+    "website"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-  "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
+  "author": "Vincent Ramdhanie",
   "bugs": {
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
+    "url": "https://github.com/vramdhanie/vdocpad/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad.git"
+    "url": "https://github.com/vramdhanie/vdocpad.git"
   },
   "engines": {
     "node": "0.10",
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.69.2",
+    "docpad": "~6.78.6",
+    "docpad-plugin-cleanurls": "~2.8.1",
+    "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-downloader": "~2.1.4",
-    "docpad-plugin-cleanurls": "~2.7.0",
-    "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-eco": "~2.1.0",
-    "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-marked": "~2.2.1",
-    "docpad-plugin-partials": "~2.9.1",
-    "docpad-plugin-related": "~2.2.2",
-    "docpad-plugin-stylus": "~2.8.0",
-    "docpad-plugin-text": "~2.3.2",
-    "docpad-plugin-moment": "~2.0.2",
+    "docpad-plugin-facebookcomments": "~2.0.4",
     "docpad-plugin-gist": "~2.1.1",
-    "docpad-plugin-facebookcomments": "~2.0.4"
+    "docpad-plugin-highlightjs": "~2.4.0",
+    "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-moment": "~2.0.2",
+    "docpad-plugin-partials": "~2.9.2",
+    "docpad-plugin-related": "~2.2.2",
+    "docpad-plugin-stylus": "~2.11.0",
+    "docpad-plugin-text": "~2.3.3"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.0"
+    "docpad-plugin-livereload": "~2.7.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
