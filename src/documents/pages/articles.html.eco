@@ -1,0 +1,17 @@
+---
+title: Articles
+layout: article
+pageOrder: 3
+---
+
+
+<div class="list-group">
+    <% for document in @getCollection('articles').toJSON(): %>
+      <a href="<%= document.url %>" class="list-group-item">
+        
+        <h4 class="list-group-item-heading"><i class="fa <%= document.icon%>"></i> <%= document.title %></h4>
+        <p class="list-group-item-text"><%= document.description %></p>
+        
+      </a>
+   <% end %>
+</div>

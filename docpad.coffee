@@ -103,6 +103,9 @@ docpadConfig = {
 
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
+			
+		articles: (database) -> 
+			database.findAllLive({tags:$has:'article'}, [date:-1])
 
 
 	# =================================
