@@ -16,7 +16,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://www.vincentramdhanie.com"
+			url: "http://www.vincentramdhanie.me"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -56,10 +56,10 @@ docpadConfig = {
 			scripts: [
 				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
-                "//apis.google.com/js/plusone.js"
-                "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        "//apis.google.com/js/plusone.js"
+        "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
-                "/scripts/custom.js"
+        "/scripts/custom.js"
 				"/scripts/script.js"
 			]
 
