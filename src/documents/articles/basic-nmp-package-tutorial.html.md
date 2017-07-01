@@ -63,7 +63,7 @@ with the details.
 Add a new file named _README.md_. This file will describe your project for persons
 wishing to use your package in their own project.
 
-```bash
+``` bash
 touch README.md
 ```
 
@@ -86,7 +86,7 @@ This builds everything in the __src__ directory and places the output in the __b
 #### Configure Babel
 Add a new top level property to the _package.json_ file.
 
-```javascript
+``` javascript
 "babel": {
     "presets": ["latest"]
 }
@@ -95,14 +95,14 @@ Add a new top level property to the _package.json_ file.
 #### Initialize Git
 Create a git repository and a _.gitignore_ file.
 
-```bash
+``` bash
 git init
 touch .gitignore
 ```
 
 Edit the .gitignore file and add an entry for the __node_modules__ directory.
 
-```bash
+``` bash
 node_modules/
 ```
 You may include any other file that you wish git to ignore.

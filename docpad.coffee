@@ -50,6 +50,7 @@ docpadConfig = {
                 "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
 				"/styles/style.css"
                 "/styles/custom.css"
+				"/styles/default.css"
 			]
 
 			# Scripts
