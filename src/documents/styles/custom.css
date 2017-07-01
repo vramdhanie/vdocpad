@@ -3,21 +3,12 @@
     text-shadow: 2px 2px 2px black;
 }
 
-#menu-toggle {
-    top: 50px;
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
-.sidebar-nav li{
-
-    padding-left:20px;
-    padding-bottom:10px;
-    padding-top:10px;
-    cursor:pointer;
-    text-indent: 0;
-    line-height: inherit;
-}
-
-.sidebar-nav li:hover{
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+main {
+	flex: 1 0 auto;
 }
