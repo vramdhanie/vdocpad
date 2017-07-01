@@ -16,7 +16,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://www.vincentramdhanie.me"
+			url: "http://www.vincentramdhanie.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -28,7 +28,7 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				Software Development with Spring Framework, the MEAN stack, PHP and Docpad
+				Software Development with Node, Angular, React, the MEAN stack, Python and Docpad
 				"""
 
 			# The website keywords (for SEO) separated by commas
@@ -44,23 +44,23 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"/styles/twitter-bootstrap.css"
-                "/vendor/stylish-portfolio/css/stylish-portfolio.css"
-                "/vendor/stylish-portfolio/font-awesome-4.1.0/css/font-awesome.min.css"
-                "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+				"//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"
+				"//fonts.googleapis.com/icon?family=Material+Icons"
+        "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
 				"/styles/style.css"
-                "/styles/custom.css"
+        "/styles/custom.css"
 				"/styles/default.css"
 			]
 
 			# Scripts
 			scripts: [
-				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+				"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+				"//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
         "//apis.google.com/js/plusone.js"
         "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
-        "/scripts/custom.js"
+				"//use.fontawesome.com/ddf9df31db.js"
+				"/scripts/custom.js"
 				"/scripts/script.js"
 			]
 
