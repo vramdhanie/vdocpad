@@ -39,7 +39,7 @@
 <body>
 	<!-- Menu -->
 	
-	<nav class="light-blue" role="navigation">
+	<nav class="blue-grey" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="/" class="brand-logo">Vincent Ramdhanie</a>
           <ul class="right hide-on-med-and-down">
@@ -80,7 +80,7 @@
 
 		<!-- Footer -->
 		
-		 <footer class="page-footer teal">
+		 <footer class="page-footer blue-grey">
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
