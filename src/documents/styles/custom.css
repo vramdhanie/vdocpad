@@ -16,3 +16,8 @@ main {
 .large-header{
 	text-shadow: 2px 2px 2px black;
 }
+
+.note {
+	padding-top:15px;
+	padding-bottom: 15px;
+}

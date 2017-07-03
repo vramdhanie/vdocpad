@@ -5,13 +5,12 @@ pageOrder: 2
 ---
 
 
-<div class="list-group">
+<div class="collection">
     <% for document in @getCollection('posts').toJSON(): %>
-      <a href="<%= document.url %>" class="list-group-item">
-        
-        <h4 class="list-group-item-heading"><i class="fa <%= document.icon%>"></i> <%= document.title %></h4>
-        <p class="list-group-item-text"><%= document.description %></p>
-        
+      <a href="<%= document.url %>" class="collection-item avatar">
+        <i class="fa <%= document.icon%> circle blue-grey"></i>
+        <div class="blue-grey-text title"><%= document.title %></div>
+        <p class="blue-grey-text text-lighten-1"><%= document.description %></p>
       </a>
    <% end %>
 </div>

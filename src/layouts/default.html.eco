@@ -73,34 +73,36 @@
         </div>
       </nav>
 
+		<main>
 	<!-- Content -->
 		
 			<%- @content %>
 		
 
 		<!-- Footer -->
-		
+		</main>
 		 <footer class="page-footer blue-grey">
             <div class="container">
               <div class="row">
-                <div class="col l6 s12">
+                <div class="col m6 s12">
                   <h5 class="white-text">Vincent Ramdhanie</h5>
                   <p class="grey-text text-lighten-4">Software Developer, Teacher</p>
         
+        		
+					<h5 class="white-text"></h5>
+					<ul class="white-text">
+					  <li>Kelly Village</li>
+					  <li>Caroni, Trinidad</li>
+					  <li><i class="material-icons tiny">phone</i> 1 (868) 741-0402</li>
+					  <li>
+						<i class="material-icons tiny">mail_outline</i>
+						<a href="mailto:vramdhanie@gmail.com" class="white-text">vramdhanie@gmail.com</a>
+					  </li>
+					</ul>
+				 	
                 </div>
-                <div class="col l3 s6 white-text">
-                  <h5 class="white-text"></h5>
-                  <ul>
-                    <li>Kelly Village</li>
-                    <li>Caroni, Trinidad</li>
-                    <li><i class="material-icons tiny">phone</i> 1 (868) 741-0402</li>
-                    <li>
-                    	<i class="material-icons tiny">mail_outline</i>
-                    	<a href="mailto:vramdhanie@gmail.com" class="white-text">vramdhanie@gmail.com</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col l3 s6">
+                
+                <div class="col m6 s12">
                   <div class="row">
                     <div class="col s3">
 					  <a href="http://www.facebook.com/vramdhanie" class="white-text">
@@ -132,6 +134,7 @@
             </div>
           </footer>
 	
+	
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
@@ -146,5 +149,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>

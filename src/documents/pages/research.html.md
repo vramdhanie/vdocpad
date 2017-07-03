@@ -6,7 +6,7 @@ pageOrder: 1
 ignored: false
 ```
 
-##Simulated Annealing
+## Simulated Annealing
 According to [Wikipedia](http://en.wikipedia.org/wiki/Simulated_annealing) simulated annealing is
 
 >a generic probabilistic metaheuristic for the global optimization problem of locating a good approximation to the global optimum of a given function in a large search space.
@@ -29,7 +29,7 @@ So my analogy may not be the best but it gets us thinking about local minimum (s
 
 If we invert this idea we end up with the [Hill Climbing Problem](http://en.wikipedia.org/wiki/Hill_climbing). In this case we are looking for the global maximum.
 
-##CUDA
+## CUDA
 According to NVIDIA
 
 >[CUDA®](http://www.nvidia.com/object/cuda_home_new.html#sthash.A6GYDjnl.dpuf) is a parallel computing platform and programming model invented by NVIDIA. It enables dramatic increases in computing performance by harnessing the power of the graphics processing unit (GPU).
@@ -39,7 +39,7 @@ The basic idea is to use many small processors working in parallel rather than o
 An excellent course on [parallel programming](https://www.udacity.com/course/cs344) using NVIDIA's CUDA can be found over at [Udacity](http://www.udacity.com).
 
 
-##Land Use Problem
+## Land Use Problem
 There are K different land use types \\( \\{k_1,k_2, ...,k_k\\} \\). For example Farm, School, Residential and so on.
 Each land use type must occupy a pre determined proportion of the total land area. Let \\(P_k\\) be the proportion of land that must be allocated to land use \\(k\\) where \\(k = 1, …, k\\).
 
@@ -50,10 +50,10 @@ A plot of land is denoted by \\(G\_{ij}\\) where \\(i = 1, …, n\\) and \\(j = 
 The intention is to maximize the value of the land at the lowest cost.
 
 
-##One ring to bring them all
+## One ring to bring them all
 Now that we know that what can we do about it? I am attempting to implement the simulated annealing algorithm on the CUDA platform specifically to solve the land use problem. 
 
-##But First...Some Definitions
+## But First...Some Definitions
 
 
 ### Bibliography
