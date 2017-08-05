@@ -1,6 +1,15 @@
 # My Website 
 *This site is built using the Docpad Bootstrap Skeleton*
 
+## Technologies
+- docpad
+- Materialize
+- Markdown
+- Eco
+- Sass
+- Coffee
+
+
 ## License
 Unless stated otherwise, all content is licensed under the 
 [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) 

@@ -108,10 +108,18 @@ node_modules/
 You may include any other file that you wish git to ignore.
 
 
-
-
 ### Write Code
-Describe the basic code
+Create a directory named _src_ where all source code will go. Create a new file named 
+_index.js_ and add the following code as a quick test.
+
+```javascript1.6
+export default () => 'Hello World!'
+```
+
+Now run 
+```npm
+npm run build
+```
 
 ### Watch
 Setup watching to make the build process better
