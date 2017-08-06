@@ -122,7 +122,19 @@ npm run build
 ```
 
 ### Watch
-Setup watching to make the build process better
+Setup watching to make the build process faster.
+
+```npm
+npm install watch --save-dev
+```
+
+add the following script to the _package.json_ file.
+
+```javascript
+"dev":"watch 'npm run build' src"
+```
+
+This runs the the build whenever the files in the _src_ directory changes.
 
 ### Testing
 Describe test setup with Jest
