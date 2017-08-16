@@ -137,7 +137,50 @@ add the following script to the _package.json_ file.
 This runs the the build whenever the files in the _src_ directory changes.
 
 ### Testing
-Describe test setup with Jest
+For this example I will use Jest for testing. Other options are available.
+Start by installing the dependency.
+
+```npm
+npm install jest --save-dev
+```
+
+And add a script to the _package.json_ file to run the tests.
+
+```javascript
+"test":"jest"
+```
+
+Next create a new file in the _src_ directory named _index.test.js_.
+Edit this file and add the following code:
+
+```javascript
+import Shorten from '.';
+
+test('say hello world', () => {
+	expect(Shorten()).toBe('Hello World!');
+});
+```
+
+And to see if that works run:
+
+```npm
+npm run test
+```
+
+To continuously test as you type you can add a watcher for all your tests.
+Add another script to _package.json_.
+
+```javascript
+"test:watch":"npm test -- --watch"
+```
+
+Now you can open two separate terminals and run the following commands, 
+one in each terminal:
+
+```npm
+npm run dev
+npm run test:watch
+```
 
 ### Linking
 How to test your package locally
