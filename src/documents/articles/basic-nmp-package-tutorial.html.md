@@ -18,7 +18,7 @@ The first step is to setup your working directory, setup npm and git.
 #### Directory
 Create a directory named _shorten_.
 
-``` bash
+```bash
 mkdir shorten
 cd shorten
 ```
@@ -26,7 +26,7 @@ cd shorten
 #### Initialize npm
 Run the initializer for npm providing appropriate values for the project.
 
-``` bash
+```bash
 npm init
 ```
 
@@ -38,7 +38,7 @@ if you wish so no worries if you change your mind.
 Npm will create a file named _package.json_ with the details at the end of the process. Here is
 the content of my file:
 
-``` javascript
+```javascript
 {
   "name": "shorten",
   "version": "0.0.1",
@@ -117,14 +117,14 @@ export default () => 'Hello World!'
 ```
 
 Now run 
-```npm
+```bash
 npm run build
 ```
 
 ### Watch
 Setup watching to make the build process faster.
 
-```npm
+```bash
 npm install watch --save-dev
 ```
 
@@ -140,7 +140,7 @@ This runs the the build whenever the files in the _src_ directory changes.
 For this example I will use Jest for testing. Other options are available.
 Start by installing the dependency.
 
-```npm
+```bash
 npm install jest --save-dev
 ```
 
@@ -163,7 +163,7 @@ test('say hello world', () => {
 
 And to see if that works run:
 
-```npm
+```bash
 npm run test
 ```
 
@@ -177,13 +177,31 @@ Add another script to _package.json_.
 Now you can open two separate terminals and run the following commands, 
 one in each terminal:
 
-```npm
+```bash
 npm run dev
 npm run test:watch
 ```
 
 ### Linking
-How to test your package locally
+In order to test your project locally the link command can be used. 
+
+```bash
+npm link	
+```
+
+Create a separate directory in which you use your package.
+
+```bash
+npm init -y
+```
+
+Then
+
+```bash
+npm link shorten
+```
+
+This links the new project to the existing shorten package.
 
 ### Documentation
 Write documentation for your package
