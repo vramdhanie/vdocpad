@@ -203,6 +203,22 @@ npm link shorten
 
 This links the new project to the existing shorten package.
 
+Next you may write a short program to test this functionality. Create a file named _index.js_.
+
+```javascript
+const { Shorten } = reqire('shorten');
+const shorter = shorten('A very long line of text');
+```
+
+Of course this does not work as no actual function named shorten 
+was written into the original package. Go back to the original package and modify
+the _index.js_ file:
+
+```javascript
+export const Shorten = (params) => params;
+
+```
+
 ### Documentation
 Write documentation for your package
 
