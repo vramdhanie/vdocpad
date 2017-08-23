@@ -220,7 +220,10 @@ export const Shorten = (params) => params;
 ```
 
 ### Documentation
-Write documentation for your package
+Create a _README.md_ file in the root of your project and describe how to 
+install and use your package with many code examples. The better documented your 
+package is the more likely other developers would
+find it easy to use and use it.
 
 ### Publish
 Push your package to the npm repository
